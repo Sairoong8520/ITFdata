@@ -3,7 +3,7 @@
 
 	$id = $_GET['id'];
 
-	$sql = 'SELECT * FROM guestbook WHERE ID = '.$id.'';
+	$sql = 'SELECT * FROM Guestbook WHERE ID = '.$id.'';
 	$query = mysqli_query($conn, $sql);
 	if(!$query) {
 		header('Location: show.php');
@@ -19,13 +19,13 @@
 </head>
 <body>
   <form action = "update.php" method = "post" >
-  <input type="text" name="ID" value="<?php echo $data['id']; ?>" class="form-control d-none" required hidden><br>
+  <input type="text" name="ID" value="<?php echo $data['ID']; ?>" class="form-control d-none" required hidden><br>
     Name:<br>
-    <input type="text" name = "name" ID="idName" placeholder="Enter Name" value="<?php echo $data['name']; ?>"> <br>
+    <input type="text" name = "name" ID="idName" placeholder="Enter Name" value="<?php echo $data['Name']; ?>"> <br>
     Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" ID="IDComment" placeholder="Enter Comment"><?php echo $data['comment']; ?></textarea><br>  
+    <textarea rows="10" cols="20" name = "comment" ID="IDComment" placeholder="Enter Comment"><?php echo $data['Comment']; ?></textarea><br>  
     Link:<br>
-    <input type="text" name = "link" id="idLink" placeholder="Enter Link" value="<?php echo $data['link']; ?>"> <br><br>
+    <input type="text" name = "link" id="idLink" placeholder="Enter Link" value="<?php echo $data['Link']; ?>"> <br><br>
     <input type="submit" id="commentBtn">
   </form>
 </body>
