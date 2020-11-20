@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-5" style="background-color: moccasin;"> 
+            <div class="col-sm-5" style="background-color: moccasin;">
                 <form action = "insert.php" method = "post" id="CommentForm">
                     Name:<br>
                     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
@@ -21,9 +21,18 @@
                     <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
                     <input type="submit" id="commentBtn">
                   </form>
-                  <form action="delete.php" method="POST" id="deleteForm">
-                    <input type="submit" id="deleteBtn">
-                  </form>
+            </div>
+            <div class="col-sm-5" style="background-color: slategrey;">
+              <form action="delete.php" method="POST" id="deleteForm">
+                  Name:<br>
+                  <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
+                  Comment:<br>
+                  <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
+                  Link:<br>
+                  <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+                  <input type="submit" id="deleteBtn">
+                </form>
+            </div>
             <div class="col-sm-3">
                 <?php
 $conn = mysqli_init();
