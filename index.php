@@ -13,15 +13,15 @@
             <div class="col-sm-12" style="background-color: moccasin;">
                 <form action = "ITFdata/insert.php" method = "post" id="CommentForm" style="text-align: center;">
                     Name:<br>
-                    <input type="text" name = "name" id="idName" placeholder="Enter Name" style="box-shadow: darkgrey;"> <br>
+                    <input type="text" name = "name" id="idName" placeholder="Enter Name" class="form-control mb-2 mr-sm-2"> <br>
                     Comment:<br>
-                    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
+                    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment" class="form-control mb-2 mr-sm-2"></textarea><br>  
                     Link:<br>
-                    <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+                    <input type="text" name = "link" id="idLink" placeholder="Enter Link" class="form-control mb-2 mr-sm-2"> <br><br>
                     <button type="submit" id="commentBtn" class="btn btn-primary mb-2">Submit</button>
                   </form>
             </div>
-            <div class="col-sm-12" style="background-color: wheat;" style="text-align: center;">
+            <div class="col-sm-12">
                 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, '103.91.205.130', 'roong.pimmada', '^49M6v@FS/TuGR,r', 'roong.pimmada', 3306);
@@ -31,7 +31,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM Guestbook');
 ?>
-<table width="1070" border="1">
+<table width="1070" border="1" style="text-align: center;" class="table table-dark">
   <tr>
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
