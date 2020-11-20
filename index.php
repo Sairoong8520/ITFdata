@@ -6,6 +6,6 @@
 </head>
 <body>
     <a href="itfdata/show.php">test</a>
-    <a href="itflab/form(1).php">test2</a>
+    <a href="itflab/form.php">test2</a>
 </body>
 </html>
