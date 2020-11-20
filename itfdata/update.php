@@ -20,6 +20,12 @@
 							if(mysqli_query($conn, $sql)) {
                                 echo 'Success'
 								?>
+							<div class="card">
+							<script>
+			   window.location.replace("show.php");
+		   </script>
+							<?php
+							}
 							else 
 								{
 									echo "Fail to load";
