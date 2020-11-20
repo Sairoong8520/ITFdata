@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +10,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-5" style="background-color: moccasin;">
-                <form action = "ITFdata/insert.php" method = "post" id="CommentForm">
+            <div class="col-sm-12" style="background-color: moccasin;">
+                <form action = "ITFdata/insert.php" method = "post" id="CommentForm" style="text-align: center;">
                     Name:<br>
-                    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
+                    <input type="text" name = "name" id="idName" placeholder="Enter Name" style="box-shadow: darkgrey;"> <br>
                     Comment:<br>
                     <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
                     Link:<br>
@@ -22,7 +21,7 @@
                     <input type="submit" id="commentBtn">
                   </form>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-12" style="background-color: wheat;" style="text-align: center;">
                 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, '103.91.205.130', 'roong.pimmada', '^49M6v@FS/TuGR,r', 'roong.pimmada', 3306);
