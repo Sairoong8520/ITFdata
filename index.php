@@ -24,8 +24,12 @@
             </div>
             <div class="col-sm-5" style="background-color: slategrey;">
               <form action="ITFdata/delete.php" method="POST" id="deleteForm">
-                  <input type="text" name = "del" id="iddel" placeholder="Enter ID"> <br>
-                  <input type="submit" id="deleteBtn">
+                Name:<br>
+                    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
+                    Comment:<br>
+                    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
+                    Link:<br>
+                    <input type="submit" id="deleteBtn">
                 </form>
             </div>
             <div class="col-sm-3">
