@@ -11,8 +11,8 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-5"> 
-                <form action = "insert.php" method = "post" id="CommentForm" style="background-color: darkgray;">
+            <div class="col-sm-5" style="background-color: moccasin;"> 
+                <form action = "insert.php" method = "post" id="CommentForm">
                     Name:<br>
                     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
                     Comment:<br>
