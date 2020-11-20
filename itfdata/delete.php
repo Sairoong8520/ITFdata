@@ -8,6 +8,11 @@ if (mysqli_connect_errno($conn))
 }
 
 
+$name = $_POST['name'];
+$comment = $_POST['comment'];
+$link = $_POST['link'];
+
+
 $sql = "DELETE FROM guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
 
 
