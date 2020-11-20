@@ -18,7 +18,7 @@
                     <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
                     Link:<br>
                     <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
-                    <input type="submit" id="commentBtn">
+                    <button type="submit" id="commentBtn" class="btn btn-primary mb-2">Submit</button>
                   </form>
             </div>
             <div class="col-sm-12" style="background-color: wheat;" style="text-align: center;">
