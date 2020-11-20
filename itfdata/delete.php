@@ -8,7 +8,7 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$sql = "DELETE INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
+$sql = "DELETE FROM guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
 
 
 if (mysqli_query($conn, $sql)) {
