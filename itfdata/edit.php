@@ -1,7 +1,7 @@
 <?php
 	$conn = mysqli_connect('103.91.205.130', 'roong.pimmada', '^49M6v@FS/TuGR,r', 'roong.pimmada', 3306);
 
-	$id = $_GET['ID'];
+	$id = $_GET['id'];
 
 	$sql = 'SELECT * FROM guestbook WHERE ID = '.$id.'';
 	$query = mysqli_query($conn, $sql);
