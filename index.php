@@ -5,6 +5,6 @@
     <title>LAB ITF</title>
 </head>
 <body>
-    <a href="ITFdata/show.html">test</a>
+    <a href="itfdata/show.html">test</a>
 </body>
 </html>
