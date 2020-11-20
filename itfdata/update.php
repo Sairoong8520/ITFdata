@@ -22,7 +22,7 @@
 								?>
 							<div class="card">
 							<script>
-			   window.location.replace("index.php");
+			   window.location.replace("show.php");
 		   </script>
 							<?php
 							}
