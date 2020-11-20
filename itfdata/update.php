@@ -18,14 +18,9 @@
 <body>
 <?php
 							if(mysqli_query($conn, $sql)) {
-                                echo 'Success'
+                                				echo 'Success';
+									window.location.replace("");
 								?>
-							<div class="card">
-							<script>
-			   window.location.replace("show.php");
-		   </script>
-							<?php
-							}
 							else 
 								{
 									echo "Fail to load";
