@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-5" style="background-color: moccasin;">
-                <form action = "insert.php" method = "post" id="CommentForm">
+                <form action = "ITFdata/insert.php" method = "post" id="CommentForm">
                     Name:<br>
                     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
                     Comment:<br>
@@ -23,7 +23,7 @@
                   </form>
             </div>
             <div class="col-sm-5" style="background-color: slategrey;">
-              <form action="delete.php" method="POST" id="deleteForm">
+              <form action="ITFdata/delete.php" method="POST" id="deleteForm">
                   Name:<br>
                   <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
                   Comment:<br>
