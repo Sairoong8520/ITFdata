@@ -7,6 +7,6 @@
 <body>
     <a href="itfdata/show.php">test</a>
     <a href="itfdata/form.php">test2</a>
-    <a href="itfdata/insert.php">test3</a>
+    <a href="itfdata/insert.php">test</a>
 </body>
 </html>
