@@ -19,7 +19,7 @@
 </head>
 <body>
   <form action = "update.php" method = "post" >
-  <input type="text" name="ID" value="<?php echo $data['ID']; ?>" class="form-control d-none" required hidden><br>
+  <input type="text" name="id" value="<?php echo $data['ID']; ?>" class="form-control d-none" required hidden><br>
     Name:<br>
     <input type="text" name = "name" ID="idName" placeholder="Enter Name" value="<?php echo $data['Name']; ?>"> <br>
     Comment:<br>
