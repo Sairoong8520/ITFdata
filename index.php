@@ -47,7 +47,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
     <td><a href='itfdata/delete.php?id=<?php echo $Result['ID'];?>' onclick=\"return confirm('Do you want to delete this record? !!!')\">Del</a></td>
-    <td><a href='itfLab/edit.php?id=<?php echo $Result['ID'];?>' onclick=\"return confirm('Do you want to edit this record? !!!')\">Edit</a></td>
+    <td><a href='itfdata/edit.php?id=<?php echo $Result['ID'];?>' onclick=\"return confirm('Do you want to edit this record? !!!')\">Edit</a></td>
   </tr>
 <?php
 }
