@@ -1,16 +1,20 @@
 <?php
 
 $conn = mysqli_init();
-mysqli_real_connect(($conn, '103.91.205.130', 'roong.pimmada', '^49M6v@FS/TuGR,r', 'roong.pimmada', 3306);
+mysqli_real_connect($conn, '103.91.205.130', 'roong.pimmada', '^49M6v@FS/TuGR,r', 'roong.pimmada', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-$id = $_REQUEST["member_id"];
 
-$sql = "DELETE FROM guestbook WHERE id='$id' ";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+$name = $_POST['name'];
+$comment = $_POST['comment'];
+$link = $_POST['link'];
+
+
+$sql = "DELETE FROM guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
+
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
