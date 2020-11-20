@@ -5,6 +5,6 @@
     <title>LAB ITF</title>
 </head>
 <body>
-    <a herf="itfdata/show.html">test</a>
+    <a herf="ITFdata/show.html">test</a>
 </body>
 </html>
